@@ -1,0 +1,92 @@
+<!--index.wxml-->
+<!--奖品，分享，规则-->
+<view class='container'>
+
+    <image class='img' src="../../image/tar/back.jpg"></image>
+    <view class='nav'>
+        <view class='list-top'>
+            <view class='top-public top-prize'>
+            我的奖品
+            <view class='top-number'>9</view>
+            </view>
+            <view class='top-public top-share'>分享</view>
+            <view class='top-public top-rule'>规则</view>
+        </view>
+
+
+ <!--广告图-->
+        <view class='advertising'>
+            <image src='../../image/tar/biao.png' class='advertising-img'></image>
+        
+        </view>
+
+
+        <!--奖品图-->
+
+        <view class='roll'>
+        
+          <view class='back-bg'>
+
+             <scroll-view scroll-x style='width:100%' class='scroll-img' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
+            
+                 <image id='1' class='goods' src='../../image/tar/10.png'></image>
+                 <image id='2' class='goods' src='../../image/tar/20.png'></image>
+                 <image id='3' class='goods' src='../../image/tar/30.png'></image>
+                 <image id='4' class='goods' src='../../image/tar/50.png'></image>
+                 <image id='5' class='goods' src='../../image/tar/1.png'></image>
+             
+             </scroll-view>
+              
+          </view>
+
+        </view>
+
+        <view class='report'>
+        
+           今天的宝箱已备好，中奖率99.9%哦~
+           
+        </view>
+
+        <view class='pagedown'>
+ 
+
+            <image class='box' src='../../image/tar/bx.png'></image>
+
+          <button class='open-box'>
+
+              <view class='box-text'>开启宝箱</view>
+
+
+              <view class='box-text-down'>(双倍中奖券)</view>
+              
+          </button>
+          <view class='word'>购旺运银台历，既有机会参加抽奖</view>
+
+          <view class="section">
+               输入开奖码：
+             <input type='text'/>
+                
+          </view>
+          <view class='news' id='marqueeBox' onmouseover="clearInterval(marqueeInterval[0])" onmouseout="marqueeInterval[0]=setInterval('startMarquee()',marquee)"></view>
+        </view>
+          
+    </view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+

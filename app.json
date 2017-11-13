@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F3F3F3",
+    "navigationBarTitleText": "免费声明：最终解释权归公司所有",
+    "navigationBarTextStyle":"black"
+  }
+}
